@@ -3,38 +3,38 @@ let Generator = require('yeoman-generator')
 module.exports = class extends Generator {
     copyFiles() {
         this.fs.copyTpl(
-            this.templatePath('package.json'),
+            this.templatePath('_.gitignore'),
+            this.destinationPath('.gitignore')
+        )
+
+        this.fs.copyTpl(
+            this.templatePath('_package.json'),
             this.destinationPath('package.json')
         )
 
         this.fs.copyTpl(
-            this.templatePath('webpack.mix.js'),
+            this.templatePath('_webpack.mix.js'),
             this.destinationPath('webpack.mix.js')
         )
 
         this.fs.copyTpl(
-            this.templatePath('resources/scss/app.scss'),
+            this.templatePath('resources/scss/_app.scss'),
             this.destinationPath('resources/scss/app.scss')
         )
 
         this.fs.copyTpl(
-            this.templatePath('resources/js/bootstrap.js'),
+            this.templatePath('resources/js/_bootstrap.js'),
             this.destinationPath('resources/js/bootstrap.js')
         )
 
         this.fs.copyTpl(
-            this.templatePath('resources/js/app.js'),
+            this.templatePath('resources/js/_app.js'),
             this.destinationPath('resources/js/app.js')
         )
 
         this.fs.copyTpl(
-            this.templatePath('public/index.html'),
+            this.templatePath('public/_index.html'),
             this.destinationPath('public/index.html')
-        )
-
-        this.fs.copyTpl(
-            this.templatePath('.gitignore'),
-            this.destinationPath('.gitignore')
         )
     }
 
