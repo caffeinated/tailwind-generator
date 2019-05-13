@@ -1,6 +1,6 @@
 {
   "name": "generator-caffeinated-tailwind",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Yeoman generator to scaffold Laravel Mix, Tailwind, and Vue.",
   "repository": {
     "type": "git",
